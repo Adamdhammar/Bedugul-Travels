@@ -5,7 +5,7 @@ body {
 main {
     background-color: rgba(245, 204, 163, 0.3);
     overflow: hidden;
-    height: 1000VH;
+    /* height: 1000vh; */
 }
 
 /* width */
@@ -176,6 +176,7 @@ main {
 .description-main {
     color: white;
     margin: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .btn-main {
@@ -343,11 +344,12 @@ main {
     transition: color 1s, background 1s;
 }
 
-.div-section hr {
+.hr-about {
     width: 100px;
     height: 0;
     align-self: center;
     margin: 0;
+    border: 1px solid black;
 }
 
 .div-sub2-about {
@@ -368,6 +370,8 @@ main {
     height: 300px;
     border-radius: 10px;
     transition: 2s;
+    object-fit: cover;
+    object-position: 100% center;
 }
 
 .img-about-square {
@@ -375,6 +379,8 @@ main {
     height: 200px;
     border-radius: 10px;
     transition: 2s;
+    object-fit: cover;
+    object-position: 100% center;
 }
 
 .div-replace-img {
@@ -396,6 +402,9 @@ main {
 
 
 
+
+
+
 * {
     /* border: 1px solid red; */
 }
@@ -405,9 +414,12 @@ main {
     height: 100vh;
     /* border: 1px solid red; */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    /* margin-top: 40vh; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    align-content: center;
+    margin-top: 10vh;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .div-sub-hotels {
@@ -421,11 +433,686 @@ main {
     /* transform: translate(-50%, -50%); */
     /* position: fixed; */
     background-position: center;
-    padding: 20px;
+    /* padding: 20px; */
     /* -webkit-filter: blur(3px); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 250px;
+    height: 100px;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.div-hotels-text {
+    transition: opacity 2s;
+}
+
+.div-hotels {
+    transition: opacity 3s;
+}
+
+.div-see-more {
+    transition: opacity 3s;
 }
 
 .title-hotels {
     margin: 0;
     text-align: center;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3rem;
+}
+
+.hotels-title-description {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.div-hotels {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.div-hotels1,
+.div-hotels2,
+.div-hotels3,
+.div-hotels4 {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.img-hotels1 {
+    width: 320px;
+    height: 200px;
+    /* height: auto; */
+    border-radius: 6px;
+}
+
+.hotels-name {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 5px 0 5px 0;
+}
+
+.stars {
+    width: 100px;
+    margin-bottom: 10px;
+    /* position: absolute; */
+    /* top: 0; */
+}
+
+.div-check-mark {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.green-check-mark {
+    width: 25px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.p-check-mark {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.div-map {
+    display: flex;
+}
+
+.map {
+    width: 20px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+.p-map {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.a-hotels {
+    color: white;
+    background-color: var(--blue-color);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    padding: 7px 10px 7px 10px;
+    border-radius: 5px;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.div-see-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-see-more {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-right: 10px;
+}
+
+.a-see-more {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+
+.a-see-more:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.title-culinary {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+.img-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-auto-rows: 280px;
+    grid-auto-flow: dense;
+    grid-gap: 25px;
+    width: 100%;
+}
+
+.single-box {
+    position: relative;
+}
+
+.single-box a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.single-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.9s, opacity 0.9s;
+    user-select: none;
+}
+
+.single-box a:hover img {
+    transform: rotate(5deg) scale(1.3);
+    opacity: 0.5; /* Make image darker */
+}
+
+.single-box .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.single-box .culinary-name {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.single-box a:hover .overlay {
+    opacity: 1; /* Show overlay with text on hover */
+}
+
+@media (max-width: 760px) {
+    .img-area {
+        padding: 0;
+    }
+
+    .wrapper {
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Destination start */
+.destin-section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.destin-container{
+    width: 100%;
+    height: 100%;
+    background-color: var(--blackColor);
+    /* margin: 0rem; */
+    /* margin-top: -80px; */
+    /* position: absolute; */
+    cursor: pointer;
+    background-color: black;
+}
+.destin-text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    transform: translate(-28%, -50%);
+}
+.title-gallery{
+    color: white;
+    font-size: 2.5vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    margin: 0;
+}
+
+.description-gallery {
+    color: white;
+    font-size: 2vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    margin: 0;
+}
+
+.scroll-text-gallery1,
+.scroll-text-gallery2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 65px;
+    height: 55px;
+    align-self: center;
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+    border-radius: 100%;
+}
+
+.scroll-text-gallery1 {
+    color: white;
+    border: 1px solid white;
+}
+
+.scroll-text-gallery2 {
+    color: black;
+    border: 1px solid black;
+}
+
+#image-track > .image{
+    width: 40vmin;
+    height: 55vmin;
+    object-fit: cover;
+    object-position: 100% center;
+}
+#image-track{
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(0%, -40%);
+    user-select: none;
+}
+/* Destination end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    /* border: 1px solid red; */
+}
+
+.div-main-ratings {
+    background-image: url(assets/images/beach-graphic.png);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    align-content: center;
+}
+
+.div-sub-main-ratings {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    gap: 150px;
+}
+
+.title-ratings {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0 0 10px 0;
+}
+
+.description-ratings {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+.btn-send-message {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--blue-color);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 20%;
+}
+
+.btn-send-message:hover {
+    cursor: pointer;
+}
+
+.div-ratings {
+    display: flex;
+    width: 35%;
+    gap: 20px;
+}
+
+marquee {
+    text-align: center;
+    padding: 10px;
+    display: flex;
+}
+
+.div-someone-ratings {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* box-shadow: 10px 1px 10px 1px black; */
+    margin-bottom: 20px;
+}
+
+* {
+    /* border: 1px solid red; */
+}
+
+.someone-name {
+    margin: 0;
+}
+
+.div-profile {
+    display: flex;
+}
+
+.profile-picture {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.img-stars {
+    width: 100px;
+}
+
+.someone-message {
+    text-align: justify;
+}
+
+.div-main-send-message {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px 1px #888888;
+    height: auto;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+.div-name-gender {
+    display: flex;
+}
+
+.div-gender {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-name {
+    width: 50%;
+    margin-right: 10px;
+}
+
+.div-name,
+.div-message {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.div-pick-ratings {
+    display: flex;
+    margin: 10px 0 10px 0;
+}
+
+.unactive-stars {
+    width: 30px;
+}
+
+input,
+textarea {
+    margin-top: 10px;
+}
+
+input[type=text] {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input[type=radio] {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+textarea {
+    resize: none;
+    border-radius: 5px;
+    padding: 5px;
+    height: 75px;
+    border: 1px solid black;
+}
+
+.error-message {
+    color: red;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 5px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.div-footer {
+    background-color: rgba(252,241,230,255);
+    padding: 20px 100px 20px 100px;
+}
+
+.div-main-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-footer {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+
+.phone-icon,
+.mail-icon,
+.map-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.div-navigation-contact {
+    display: flex;
+    gap: 50px;
+}
+
+.div-phone,
+.div-mail,
+.div-map {
+    display: flex;
+    align-items: center;
+}
+
+.div-logo-text {
+    display: flex;
+    width: 30%;
+}
+
+.hr-footer {
+    /* color: black; */
+    border: 1px solid black;
+}
+
+* {
+    /* border: 1px solid red; */
+}
+
+.copyright-footer {
+    text-align: center;
+    font-weight: bold;
+}
+
+.h1-footer {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 20px 0 0 0;
+}
+
+.description-footer {
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Smartphone Portrait */
+@media (max-width: 480px) {
+    /* Gaya untuk perangkat dengan lebar maksimum 480px */
+
+}
+
+/* Smartphone Landscape */
+@media (max-width: 768px) {
+    /* Gaya untuk perangkat dengan lebar maksimum 768px */
+}
+
+/* Tablet Portrait */
+@media (max-width: 1024px) {
+    /* Gaya untuk perangkat dengan lebar maksimum 1024px */
+}
+
+/* Tablet Landscape dan Laptop */
+@media (max-width: 1280px) {
+    /* Gaya untuk perangkat dengan lebar maksimum 1280px */
+}
+
+/* Desktop */
+@media (min-width: 1281px) {
+    /* Gaya untuk perangkat dengan lebar minimum 1281px */
 }
